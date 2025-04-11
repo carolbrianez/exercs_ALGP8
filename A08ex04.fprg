@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 08:21:37 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNC0xMTsiMDg6MTE6MDggIjsyMDk3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNC0xMTsiMDg6MjE6MzcgIjsyOzIyMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a temperatura da caldeira: &quot;" newline="True"/>
+            <input variable="temp"/>
+            <if expression="temp &gt;= 35 &amp;&amp; temp &lt;= 45">
+                <then>
+                    <output expression="&quot;Temperatura regular!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="temp &lt; 35">
+                        <then>
+                            <output expression="&quot;Temperatura baixa.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="temp &gt; 45">
+                                <then>
+                                    <output expression="&quot;Temperatura alta.&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
