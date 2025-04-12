@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-11 09:02:56 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNC0xMTsiMDg6MjM6NTMgIjsyMTAw"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNC0xMTsiMDk6MDI6NTYgIjsyOzIyMTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Real" array="False" size=""/>
+            <declare name="escolha" type="String" array="False" size=""/>
+            <output expression="&quot;Escolha a opera&#231;&#227;o: soma (soma), subtra&#231;&#227;o (sub), multiplica&#231;&#227;o (mult) ou divis&#227;o (div): &quot;" newline="True"/>
+            <input variable="escolha"/>
+            <output expression="&quot;Digite o primeiro valor: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo valor: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="escolha == &quot;soma&quot;">
+                <then>
+                    <output expression="&quot;Resultado da opera&#231;&#227;o: &quot;&amp;n1&amp;&quot; + &quot;&amp;n2&amp;&quot; = &quot; &amp; (n1+n2)" newline="True"/>
+                </then>
+                <else>
+                    <if expression="escolha == &quot;sub&quot;">
+                        <then>
+                            <output expression="&quot;Resultado da opera&#231;&#227;o: &quot;&amp;n1&amp;&quot; - &quot;&amp;n2&amp;&quot; = &quot; &amp; (n1-n2)" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="escolha == &quot;mult&quot;">
+                                <then>
+                                    <output expression="&quot;Resultado da opera&#231;&#227;o: &quot;&amp;n1&amp;&quot; x &quot;&amp;n2&amp;&quot; = &quot; &amp; (n1*n2)" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="escolha == &quot;div&quot;">
+                                        <then>
+                                            <output expression="&quot;Resultado da opera&#231;&#227;o: &quot;&amp;n1&amp;&quot; / &quot;&amp;n2&amp;&quot; = &quot; &amp; (n1/n2)" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
